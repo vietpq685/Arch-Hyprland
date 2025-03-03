@@ -19,7 +19,9 @@ echo "Install Hyprland and necessary components"
 sudo pacman -S --noconfirm hyprland ghostty nemo
 
 echo "Stow dotfiles"
+git clone https://github.com/vietpq685/Arch-Hyprland.git ~/Arch-Hyprland
 mkdir -p ~/dotfiles && mv ~/Arch-Hyprland/dotfiles/* ~/dotfiles/
+rm -rf ~/Arch-Hyprland
 cd ~/dotfiles
 stow ghostty hypr rofi wallpaper waybar wlogout
 cd ~
