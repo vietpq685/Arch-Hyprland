@@ -12,8 +12,6 @@ This script automates install and setup my Arch Hyprland
 ## Installation
 Using this script to install Hyprland on an Arch-based system
 ```
-git clone https://github.com/vietpq685/Arch-Hyprland.git ~/Arch-Hyprland
-cd ~/Arch-Hyprland
-chmod +x install.sh
-./install.sh
+sudo pacman -Syu --noconfirm
+bash -c "$(curl -fSL https://bit.ly/ias-arch-hypr-sh)"
 ```
