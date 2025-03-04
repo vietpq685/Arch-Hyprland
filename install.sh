@@ -15,8 +15,18 @@ makepkg -si --noconfirm
 cd ~
 rm -rf ~/yay
 
-echo "Install Hyprland and necessary components"
+echo "Install package"
 sudo pacman -S --noconfirm hyprland ghostty stow nemo swww waybar rofi rofi-emoji hyprlock swaync discord
+yay -S --noconfirm wlogout hyprshot brave-bin spotify cava visual-studio-code-bin
+
+echo "Install JetBrainsMono Nerd Font"
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+unzip JetBrainsMono.zip
+rm JetBrainsMono.zip
+fc-cache -fv
+cd ~
 
 echo "Stow dotfiles"
 git clone https://github.com/vietpq685/Arch-Hyprland.git ~/Arch-Hyprland
