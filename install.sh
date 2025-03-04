@@ -16,7 +16,7 @@ cd ~
 rm -rf ~/yay
 
 echo "Install Hyprland and necessary components"
-sudo pacman -S --noconfirm hyprland ghostty nemo
+sudo pacman -S --noconfirm hyprland ghostty stow nemo swww waybar rofi rofi-emoji hyprlock swaync discord
 
 echo "Stow dotfiles"
 git clone https://github.com/vietpq685/Arch-Hyprland.git ~/Arch-Hyprland
